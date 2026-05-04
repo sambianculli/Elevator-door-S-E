@@ -1,6 +1,6 @@
 #include <FastAccelStepper.h>
 #include <LiquidCrystal_I2C.h>
-// microsteps=1600 on off on on
+// microsteps=3200 off off on on
 #define numLED 2
 #define numBTN 2
 
@@ -44,12 +44,12 @@ FastAccelStepper *stepper = NULL;
 // ===============================
 // MOTION SETTINGS
 // ===============================
-int32_t maxSpeed = 2500;
-int32_t accel    = 1200;
+int32_t maxSpeed = 5000;
+int32_t accel    = 3200;
 
-const int32_t CAL_SPEED = 1000;
-const int32_t HOMING_SLOW_SPEED = 300;
-const int HOMING_BACKOFF_STEPS = 300;
+const int32_t CAL_SPEED = 2000;
+const int32_t HOMING_SLOW_SPEED = 600;
+const int HOMING_BACKOFF_STEPS = 600;
 
 // ===============================
 // STATE
